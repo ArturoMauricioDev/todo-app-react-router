@@ -1,0 +1,20 @@
+@import "./components/styles/globales.scss";
+@import "./components/styles/TodoCounter";
+@import "./components/styles/CreateTodoButton";
+@import "./components/styles/TodoList";
+@import "./components/styles/TodoSearch";
+@import "./components/styles/TodoItem.scss";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: $bg-color;
+  font-family: $Fuente1;
+}
+
+#root {
+  margin: 0 24px;
+  min-height: 100vh;
+}

@@ -1,0 +1,20 @@
+.todo-search {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    height: 48px;
+    width: calc(100% - 80px);
+    background-color: $bg-component;
+    border-radius: 10px;
+    border: 1px solid $color-variante;
+    color:$color-secundario-tranparenci;
+    font-size: 20px;
+    text-align: center;
+    font-family: $Fuente1;
+    font-weight: 400;
+  
+    &:focus{
+        outline-color: $color-primario;
+        color: $color-primario;
+    }
+}

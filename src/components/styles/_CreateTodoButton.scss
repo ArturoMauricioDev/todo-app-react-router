@@ -1,0 +1,19 @@
+.create-todo-button{
+    background-color: $color-primario;
+    color: $color-secundario;
+    border: none;
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    font-size: 3rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    font-weight: 600;
+    box-shadow: 3px 3px 9px 0px #228681, -2px -1px 10px #30bcb7;
+    transition: .3s ease;
+    &:hover{
+        transform: rotate(224deg);
+    }
+}
