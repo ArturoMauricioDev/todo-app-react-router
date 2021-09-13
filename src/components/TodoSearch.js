@@ -1,7 +1,6 @@
-import { useState } from "react"
 
-function TodoSearch({ id, placeholder, type }) {
-    const [searchValue, setSearchValue] = useState('')
+
+function TodoSearch({ searchValue, setSearchValue }) {
     const onSearchValueChange = (event) => {
         console.log(event.target.value)
         setSearchValue(event.target.value)
@@ -11,9 +10,9 @@ function TodoSearch({ id, placeholder, type }) {
         <p>{searchValue} </p>
     ]
 
-    
 
-    
+
+
 }
 
 export { TodoSearch }
