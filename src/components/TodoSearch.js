@@ -1,11 +1,19 @@
-import React from 'react'
+import { useState } from "react"
 
 function TodoSearch({ id, placeholder, type }) {
-    return (
+    const [searchValue, setSearchValue] = useState('')
+    const onSearchValueChange = (event) => {
+        console.log(event.target.value)
+        setSearchValue(event.target.value)
+    }
+    return [
+        <input className="todo-search" placeholder="Search..." type="text" value={searchValue} onChange={onSearchValueChange} />,
+        <p>{searchValue} </p>
+    ]
 
-        <input className="todo-search" placeholder="Search..." type="text" />
+    
 
-    )
+    
 }
 
 export { TodoSearch }
