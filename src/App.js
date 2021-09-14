@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react"
+import React, { useMemo, useState, useEffect } from "react"
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import { AppUI } from "./AppUI";
 
@@ -39,6 +39,18 @@ function App() {
     newTodos.splice(todoIndex, 1);
     saveTodos(newTodos);
   }
+
+  console.log('render antes del useeffect');
+
+  useEffect(() => {
+    console.log('use efect')
+    return () => {
+      console.log('return useeffect')
+    }
+  }, [])
+  console.log('render despues del useeffect');
+
+
 
   return (
     <AppUI totalTodos={totalTodos} completedTodos={completedTodos} searchValue={searchValue} setSearchValue={setSearchValue} filteredText={filteredText} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
