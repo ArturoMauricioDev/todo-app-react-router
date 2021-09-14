@@ -47,7 +47,7 @@ function App() {
     return () => {
       console.log('return useeffect')
     }
-  }, [])
+  }, [totalTodos])
   console.log('render despues del useeffect');
 
 
