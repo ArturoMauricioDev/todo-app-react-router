@@ -1,0 +1,60 @@
+form{
+    width: 90%;
+    max-width: 300px;
+    background-color: $bg-component;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 36px 4px;
+    border-radius: 10px;
+    position: relative;
+    & label{
+    color: $color-primario;
+    margin-bottom: 28px;
+    }
+    & textarea{
+        background-color:$bg-component;
+        border: 1px solid $color-variante;
+        border-radius: 10px;
+        color:$color-secundario-tranparenci;
+        font-family: $Fuente1;
+        font-weight: 400;
+        height: 96px;
+        width: calc(100% - 25px);
+        &:focus{
+            outline-color: $color-primario;
+            // color: $color-primario;
+        }
+        &::placeholder{
+            text-align: center;
+        }
+    }
+    .todoForm-button__cancel{
+       position: absolute;
+       top: -8px;
+       right: 16px;
+       &:hover{
+            color: red;
+       }
+    }
+    .todoForm-button{
+        display: block;
+        height: 32px;
+        width: 75%;
+        margin-top: 36px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        font-family: "Nunito", sans-serif;
+        background-color: $color-primario;
+        color: $color-secundario;
+        &:disabled{
+            cursor: default;
+            background-color: $color-primario-disabled;
+            color: $color-secundario-tranparenci;
+        }
+    } 
+
+}
+
