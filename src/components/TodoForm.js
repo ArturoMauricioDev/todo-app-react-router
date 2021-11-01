@@ -1,10 +1,8 @@
-import React, { useContext, useState } from "react";
-import { TodoContext } from "../context/TodoContext";
+import React, { useState } from "react";
 import { ImCross } from "react-icons/im";
 
-function TodoForm() {
+function TodoForm({ addTodo, setOpenModal }) {
   const [newTodoValue, setNewTodoValue] = useState("");
-  const { addTodo, setOpenModal } = useContext(TodoContext);
   const onCancel = () => {
     setOpenModal(false);
   };
