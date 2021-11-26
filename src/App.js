@@ -8,6 +8,8 @@ import { TodoItem } from './components/TodoItem'
 import { CreateTodoButton } from './components/CreateTodoButton'
 import { Modal } from './components/Modal'
 import { TodoForm } from './components/TodoForm';
+import { EmptyTodos } from './components/EmptyTodos'
+import { ChangeAlertWithStorageListener } from './components/ChangeAlert';
 
 function App() {
   const { filteredText,
@@ -19,7 +21,8 @@ function App() {
     setSearchValue,
     openModal,
     setOpenModal,
-    addTodo
+    addTodo,
+    setSincronizedItem
   } = useTodos()
 
   return (
@@ -33,7 +36,39 @@ function App() {
           setSearchValue={setSearchValue} />
       </TodoHeader>
 
-      <TodoList>
+      <TodoList
+        filteredText={filteredText}
+        totalTodos={totalTodos}
+        searchValue={searchValue}
+        onEmptyTodos={() => <EmptyTodos />}
+        onEmptySearchResults={
+          (searchText) => <p>No hay resultados para {searchText}</p>
+        }
+        render={todo => (
+          <TodoItem
+            key={todo.text}
+            text={todo.text}
+            completed={todo.completed}
+            onComplete={() => toggleTodo(todo.text)}
+            onDelete={() => deleteTodo(todo.text)}
+          />
+        )
+        }
+      >
+        {/* {todo => (
+          <TodoItem
+            key={todo.text}
+            text={todo.text}
+            completed={todo.completed}
+            onComplete={() => toggleTodo(todo.text)}
+            onDelete={() => deleteTodo(todo.text)}
+          />
+        )
+        } */}
+
+      </TodoList>
+
+      {/* <TodoList>
         {filteredText.map(todo => (
           <TodoItem
             key={todo.text}
@@ -42,7 +77,7 @@ function App() {
             onComplete={() => toggleTodo(todo.text)}
             onDelete={() => deleteTodo(todo.text)} />
         ))}
-      </TodoList>
+      </TodoList> */}
 
 
       {openModal && (
@@ -55,12 +90,11 @@ function App() {
       <CreateTodoButton
         openModal={openModal}
         setOpenModal={setOpenModal} />
+
+      <ChangeAlertWithStorageListener
+        sincronize={setSincronizedItem}
+      />
     </>
   )
-
 }
-
-
-
-
 export default App;

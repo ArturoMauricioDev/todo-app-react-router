@@ -5,7 +5,7 @@ import { useLocalStorage } from "./useLocalStorage";
 
 function useTodos() {
 
-    const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
+    const [todos, saveTodos, setSincronizedItem] = useLocalStorage('TODOS_V1', []);
 
     const [searchValue, setSearchValue] = useState('');
     const [openModal, setOpenModal] = useState(false);
@@ -55,7 +55,8 @@ function useTodos() {
             deleteTodo,
             openModal,
             setOpenModal,
-            addTodo
+            addTodo,
+            setSincronizedItem
         }
 }
 

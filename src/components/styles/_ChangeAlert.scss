@@ -1,0 +1,50 @@
+.ChangeAlert-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1e1e1f50;
+    z-index: 2;
+    & .alert-container{
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & p{
+            width: 100%;
+            height: 56px;
+            margin: 0;
+            background: #f75858;
+            color: $color-secundario;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            cursor: pointer;
+
+        }
+        & button{
+            width: 100%;
+            height: 48px;
+            margin: 0;
+            background: $color-secundario;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            color: $bg-component;
+            font-family: $Fuente1;
+            font-size: 16px;
+            font-weight: 700;
+            border: 1px solid transparent;
+            transition: border 0.15;
+            &:hover{
+                border: $color-secundario-tranparenci;
+            }
+        }
+
+    }
+}
