@@ -12,18 +12,22 @@ import { EmptyTodos } from './components/EmptyTodos'
 import { ChangeAlertWithStorageListener } from './components/ChangeAlert';
 
 function App() {
-  const { filteredText,
-    toggleTodo,
-    deleteTodo,
+  const { states, stateUpdaters} = useTodos();
+
+  const{ filteredText,
     totalTodos,
     completedTodos,
     searchValue,
-    setSearchValue,
     openModal,
+  } = states;
+  const {     
+    toggleTodo,
+    deleteTodo,
+    setSearchValue,
     setOpenModal,
     addTodo,
     setSincronizedItem
-  } = useTodos()
+  } = stateUpdaters;
 
   return (
     <>

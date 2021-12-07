@@ -45,19 +45,23 @@ function useTodos() {
         saveTodos(newTodos);
     }
 
-    return {
-            totalTodos,
-            completedTodos,
-            searchValue,
-            setSearchValue,
-            filteredText,
-            toggleTodo,
-            deleteTodo,
-            openModal,
-            setOpenModal,
-            addTodo,
-            setSincronizedItem
-        }
+    const states={
+        totalTodos,
+        completedTodos,
+        searchValue,
+        filteredText,
+        openModal,
+    }
+    const stateUpdaters={
+        setSearchValue,
+        toggleTodo,
+        deleteTodo,
+        setOpenModal,
+        addTodo,
+        setSincronizedItem
+    }
+
+    return {states, stateUpdaters}
 }
 
 export { useTodos }
