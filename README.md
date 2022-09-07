@@ -1,9 +1,9 @@
 # Todo App in React
-Es un proyecto que tiene como objetivo aplicar teoria de componentes utilizando `Atomic Design` bajo el **principio de responsabilidad única**, para los estilos se utilizó el preprocesador de CSS `SASS'. Se creo la aplicación con ´Create React App´, se utilizó coneptos de estados de componentes y el ciclo de vida de los mismos, además de varios hooks. La aplicación también utiliza persistencia de datos en el Local Storage. 
+Es un proyecto que tiene como objetivo aplicar teoría de componentes utilizando `Atomic Design` bajo el **principio de responsabilidad única**, para los estilos se utilizó el preprocesador de CSS `SASS`. Se creó la aplicación con `Create React App`, se utilizó conceptos de estados de componentes y el ciclo de vida de los mismos, además de varios hooks. La aplicación también utiliza persistencia de datos en el Local Storage. 
 
 ## Demo
 
-El proyecto esta disponible en [https://room.js.org/](https://room.js.org/). Asimismo este es su [repositorio](https://github.com/ArturoMauricioDev/roomHomepage).
+El proyecto esta disponible en [https://arturomauriciodev.github.io/todo-app-react-render/](https://arturomauriciodev.github.io/todo-app-react-render/).
 
 ## Tabla de Contenidos
   - [Descripción](#descripción)
