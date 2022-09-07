@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function EmptyTodos() {
-    return (
-        <>
-           <p>Agregue una tarea a realizar.</p> 
-        </>
-    )
+  return (
+    <>
+      <p className="empty-todos">Agregue una tarea a realizar</p>
+    </>
+  );
 }
 
-export { EmptyTodos }
+export { EmptyTodos };
