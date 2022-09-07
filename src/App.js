@@ -1,43 +1,35 @@
-import React from 'react';
-import { useTodos } from './hooks/useTodos'
-import { TodoHeader } from './components/TodoHeader'
-import { TodoCounter } from './components/TodoCounter'
-import { TodoSearch } from './components/TodoSearch'
-import { TodoList } from './components/TodoList'
-import { TodoItem } from './components/TodoItem'
-import { CreateTodoButton } from './components/CreateTodoButton'
-import { Modal } from './components/Modal'
-import { TodoForm } from './components/TodoForm';
-import { EmptyTodos } from './components/EmptyTodos'
-import { ChangeAlertWithStorageListener } from './components/ChangeAlert';
+import React from "react";
+import { useTodos } from "./hooks/useTodos";
+import { TodoHeader } from "./components/TodoHeader";
+import { TodoCounter } from "./components/TodoCounter";
+import { TodoSearch } from "./components/TodoSearch";
+import { TodoList } from "./components/TodoList";
+import { TodoItem } from "./components/TodoItem";
+import { CreateTodoButton } from "./components/CreateTodoButton";
+import { Modal } from "./components/Modal";
+import { TodoForm } from "./components/TodoForm";
+import { EmptyTodos } from "./components/EmptyTodos";
+import { ChangeAlertWithStorageListener } from "./components/ChangeAlert";
 
 function App() {
-  const { states, stateUpdaters} = useTodos();
+  const { states, stateUpdaters } = useTodos();
 
-  const{ filteredText,
-    totalTodos,
-    completedTodos,
-    searchValue,
-    openModal,
-  } = states;
-  const {     
+  const { filteredText, totalTodos, completedTodos, searchValue, openModal } =
+    states;
+  const {
     toggleTodo,
     deleteTodo,
     setSearchValue,
     setOpenModal,
     addTodo,
-    setSincronizedItem
+    setSincronizedItem,
   } = stateUpdaters;
 
   return (
     <>
       <TodoHeader>
-        <TodoCounter
-          totalTodos={totalTodos}
-          completedTodos={completedTodos} />
-        <TodoSearch
-          searchValue={searchValue}
-          setSearchValue={setSearchValue} />
+        <TodoCounter totalTodos={totalTodos} completedTodos={completedTodos} />
+        <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
       </TodoHeader>
 
       <TodoList
@@ -45,10 +37,10 @@ function App() {
         totalTodos={totalTodos}
         searchValue={searchValue}
         onEmptyTodos={() => <EmptyTodos />}
-        onEmptySearchResults={
-          (searchText) => <p>No hay resultados para {searchText}</p>
-        }
-        render={todo => (
+        onEmptySearchResults={(searchText) => (
+          <p className="empty-todos">No hay resultados para: {searchText}</p>
+        )}
+        render={(todo) => (
           <TodoItem
             key={todo.text}
             text={todo.text}
@@ -56,8 +48,7 @@ function App() {
             onComplete={() => toggleTodo(todo.text)}
             onDelete={() => deleteTodo(todo.text)}
           />
-        )
-        }
+        )}
       >
         {/* {todo => (
           <TodoItem
@@ -69,7 +60,6 @@ function App() {
           />
         )
         } */}
-
       </TodoList>
 
       {/* <TodoList>
@@ -83,22 +73,15 @@ function App() {
         ))}
       </TodoList> */}
 
-
       {openModal && (
         <Modal>
-          <TodoForm
-            addTodo={addTodo}
-            setOpenModal={setOpenModal} />
+          <TodoForm addTodo={addTodo} setOpenModal={setOpenModal} />
         </Modal>
       )}
-      <CreateTodoButton
-        openModal={openModal}
-        setOpenModal={setOpenModal} />
+      <CreateTodoButton openModal={openModal} setOpenModal={setOpenModal} />
 
-      <ChangeAlertWithStorageListener
-        sincronize={setSincronizedItem}
-      />
+      <ChangeAlertWithStorageListener sincronize={setSincronizedItem} />
     </>
-  )
+  );
 }
 export default App;
