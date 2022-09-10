@@ -5,15 +5,28 @@ Es un proyecto que tiene como objetivo aplicar teoría de componentes utilizando
 
 El proyecto esta disponible en [https://arturomauriciodev.github.io/todo-app-react-render/](https://arturomauriciodev.github.io/todo-app-react-render/).
 
-En la imagen se observa la pantalla de inicio, donde se puede agregar tareas a realizar.
+En la imagen se observa la pantalla de inicio, donde se puede agregar las tareas a realizar.
+
 ![Inicio de la aplicacion, agregue una tarea a realizar](https://i66.servimg.com/u/f66/20/43/92/62/localh18.png)
+
 Se despliega un modal en el cual se escribe la tarea a realizar y se le da en añadir.
+
 ![Escibe un nuevo TODO y has clic en añadir](https://i66.servimg.com/u/f66/20/43/92/62/localh19.png)
-Las tareas se agregan cronologicamente, se puede indicar que ya fueron completadas mostrandonos el total de ellas en la parte superior. Tambien se las puede eliminar para que desaparezcan de la lista. Tambien es bueno mencionar que todos los datos son guardados en el local storage de tal modo que si cerramos el navegador los datos persisten para la proxima vez que se abra el navegador.
+
+Las tareas se agregan cronológicamente, se puede indicar que ya fueron completadas mostrándonos el total de ellas en la parte superior. También se las puede eliminar para que desaparezcan de la lista. Asimismo, es bueno mencionar que todos los datos son guardados en el local storage de tal modo que si cerramos el navegador los datos persisten para la próxima vez que se abra el navegador e ingrese a la aplicación.
+
 ![Has completado 2 tareas de 4](https://i66.servimg.com/u/f66/20/43/92/62/localh20.png)
 
+Se pueden ingresar caracteres y/o palabras para filtrar las tareas a mostrar en la lista.
+
 ![Ingreso la i en el cuadro de búsqueda de tareas](https://i66.servimg.com/u/f66/20/43/92/62/localh21.png)
+
+Por ejemplo, si ingreso "im" se desplegaría en la lista de tareas "Implementar estados a mis componentes".
+
 ![Se ingresa im en el cuadro de búsqueda dando un resultado](https://i66.servimg.com/u/f66/20/43/92/62/localh22.png)
+
+En caso de no encontrar coincidencias, se despliega un mensaje de "No hay resultados para:" el criterio de su búsqueda.
+
 ![Se ingresa reac en el cuadro de búsqueda dando ningun reslutado](https://i66.servimg.com/u/f66/20/43/92/62/localh17.png)
 
 ## Tabla de Contenidos
