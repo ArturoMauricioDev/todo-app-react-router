@@ -5,14 +5,12 @@ Es un proyecto que tiene como objetivo aplicar teoría de componentes utilizando
 
 El proyecto esta disponible en [https://arturomauriciodev.github.io/todo-app-react-render/](https://arturomauriciodev.github.io/todo-app-react-render/).
 
-![Inicio de la aplicacion, agregue una tarea a realizar](https://i66.servimg.com/u/f66/20/43/92/62/localh10.png)
-![Escibe un nuevo TODO y has clic en añadir](https://i66.servimg.com/u/f66/20/43/92/62/localh11.png)
-![Has completado 2 tareas de 4](https://i66.servimg.com/u/f66/20/43/92/62/localh12.png)
-![Ingreso la i en el cuadro de búsqueda de tareas](https://i66.servimg.com/u/f66/20/43/92/62/localh13.png)
-![Se ingresa im en el cuadro de búsqueda dando un resultado](https://i66.servimg.com/u/f66/20/43/92/62/localh14.png)
-![Se ingresa reaz en el cuadro de búsqueda dando ningun reslutado](https://i66.servimg.com/u/f66/20/43/92/62/localh15.png)
-![Se ingresa reaz en el cuadro de búsqueda dando ningun reslutado](https://i66.servimg.com/u/f66/20/43/92/62/localh16.png)
-![Se ingresa reaz en el cuadro de búsqueda dando ningun reslutado](https://i66.servimg.com/u/f66/20/43/92/62/localh17.png)
+![Inicio de la aplicacion, agregue una tarea a realizar](https://i66.servimg.com/u/f66/20/43/92/62/localh18.png)
+![Escibe un nuevo TODO y has clic en añadir](https://i66.servimg.com/u/f66/20/43/92/62/localh19.png)
+![Has completado 2 tareas de 4](https://i66.servimg.com/u/f66/20/43/92/62/localh20.png)
+![Ingreso la i en el cuadro de búsqueda de tareas](https://i66.servimg.com/u/f66/20/43/92/62/localh21.png)
+![Se ingresa im en el cuadro de búsqueda dando un resultado](https://i66.servimg.com/u/f66/20/43/92/62/localh22.png)
+![Se ingresa reac en el cuadro de búsqueda dando ningun reslutado](https://i66.servimg.com/u/f66/20/43/92/62/localh17.png)
 
 ## Tabla de Contenidos
   - [Descripción](#descripción)
