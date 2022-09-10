@@ -1,6 +1,16 @@
 # Todo App in React
 Es un proyecto que tiene como objetivo aplicar teoría de componentes utilizando `Atomic Design` bajo el **principio de responsabilidad única**, para los estilos se utilizó el preprocesador de CSS `SASS`. Se creó la aplicación con `Create React App`, se utilizó conceptos de estados de componentes y el ciclo de vida de los mismos, además de varios `hooks`. La aplicación también utiliza persistencia de datos en el `Local Storage`. 
 
+## Tabla de Contenidos
+   - [Demo](#demo)
+   - [Construcción del proyecto](#construcción-del-proyecto)
+    * [Estructura HTML](#estructura-html)
+    * [Estilos en CSS](#estilos-en-css)
+    * [Manipulando el DOM con JavaScript](#manipulando-el-dom-con-javascript)
+   - [Licencia](#licencia)
+   - [Bonus](#bonus)
+   - [Autor](#autor)
+
 ## Demo
 
 El proyecto esta disponible en [https://arturomauriciodev.github.io/todo-app-react-render/](https://arturomauriciodev.github.io/todo-app-react-render/).
@@ -28,15 +38,6 @@ Por ejemplo, si ingreso "im" se desplegaría en la lista de tareas "Implementar 
 En caso de no encontrar coincidencias, se despliega un mensaje de "No hay resultados para:" el criterio de su búsqueda.
 
 ![Se ingresa reac en el cuadro de búsqueda dando ningun reslutado](https://i66.servimg.com/u/f66/20/43/92/62/localh17.png)
-
-## Tabla de Contenidos
-   - [Construcción del proyecto](#construcción-del-proyecto)
-    * [Estructura HTML](#estructura-html)
-    * [Estilos en CSS](#estilos-en-css)
-    * [Manipulando el DOM con JavaScript](#manipulando-el-dom-con-javascript)
-   - [Licencia](#licencia)
-   - [Bonus](#bonus)
-   - [Autor](#autor)
 
 
 ## Construcción del proyecto
