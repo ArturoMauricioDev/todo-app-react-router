@@ -4,9 +4,9 @@ Es un proyecto que tiene como objetivo aplicar teoría de componentes utilizando
 ## Tabla de Contenidos
    - [Demo](#demo)
    - [Construcción del proyecto](#construcción-del-proyecto)
-    * [Estructura HTML](#estructura-html)
-    * [Estilos en CSS](#estilos-en-css)
-    * [Manipulando el DOM con JavaScript](#manipulando-el-dom-con-javascript)
+      * [Estructura HTML](#estructura-html)
+      * [Estilos en CSS](#estilos-en-css)
+      * [Manipulando el DOM con JavaScript](#manipulando-el-dom-con-javascript)
    - [Licencia](#licencia)
    - [Bonus](#bonus)
    - [Autor](#autor)
