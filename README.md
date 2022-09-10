@@ -5,9 +5,13 @@ Es un proyecto que tiene como objetivo aplicar teoría de componentes utilizando
 
 El proyecto esta disponible en [https://arturomauriciodev.github.io/todo-app-react-render/](https://arturomauriciodev.github.io/todo-app-react-render/).
 
+En la imagen se observa la pantalla de inicio, donde se puede agregar tareas a realizar.
 ![Inicio de la aplicacion, agregue una tarea a realizar](https://i66.servimg.com/u/f66/20/43/92/62/localh18.png)
+Se despliega un modal en el cual se escribe la tarea a realizar y se le da en añadir.
 ![Escibe un nuevo TODO y has clic en añadir](https://i66.servimg.com/u/f66/20/43/92/62/localh19.png)
+Las tareas se agregan cronologicamente, se puede indicar que ya fueron completadas mostrandonos el total de ellas en la parte superior. Tambien se las puede eliminar para que desaparezcan de la lista. Tambien es bueno mencionar que todos los datos son guardados en el local storage de tal modo que si cerramos el navegador los datos persisten para la proxima vez que se abra el navegador.
 ![Has completado 2 tareas de 4](https://i66.servimg.com/u/f66/20/43/92/62/localh20.png)
+
 ![Ingreso la i en el cuadro de búsqueda de tareas](https://i66.servimg.com/u/f66/20/43/92/62/localh21.png)
 ![Se ingresa im en el cuadro de búsqueda dando un resultado](https://i66.servimg.com/u/f66/20/43/92/62/localh22.png)
 ![Se ingresa reac en el cuadro de búsqueda dando ningun reslutado](https://i66.servimg.com/u/f66/20/43/92/62/localh17.png)
