@@ -13,7 +13,7 @@ Se despliega un modal en el cual se escribe la tarea a realizar y se le da en a�
 
 ![Escibe un nuevo TODO y has clic en añadir](https://i66.servimg.com/u/f66/20/43/92/62/localh19.png)
 
-Las tareas se agregan cronológicamente, se puede indicar que ya fueron completadas mostrándonos el total de ellas en la parte superior. También se las puede eliminar para que desaparezcan de la lista. Asimismo, es bueno mencionar que todos los datos son guardados en el local storage de tal modo que si cerramos el navegador los datos persisten para la próxima vez que se abra el navegador e ingrese a la aplicación.
+Las tareas se agregan cronológicamente, se puede indicar que ya fueron completadas mostrando el total de ellas en la parte superior. También se las puede eliminar para que desaparezcan de la lista. Asimismo, es bueno mencionar que todos los datos son guardados en el local storage de tal modo que si cerramos el navegador los datos persisten para la próxima vez que se abra el navegador e ingrese a la aplicación.
 
 ![Has completado 2 tareas de 4](https://i66.servimg.com/u/f66/20/43/92/62/localh20.png)
 
