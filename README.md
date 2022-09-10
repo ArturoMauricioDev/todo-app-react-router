@@ -5,7 +5,7 @@ Es un proyecto que tiene como objetivo aplicar teoría de componentes utilizando
 
 El proyecto esta disponible en [https://arturomauriciodev.github.io/todo-app-react-render/](https://arturomauriciodev.github.io/todo-app-react-render/).
 
-En la imagen se observa la pantalla de inicio, donde se puede agregar las tareas a realizar.
+En la imagen se observa la pantalla de inicio, donde se pueden agregar las tareas a realizar.
 
 ![Inicio de la aplicacion, agregue una tarea a realizar](https://i66.servimg.com/u/f66/20/43/92/62/localh18.png)
 
