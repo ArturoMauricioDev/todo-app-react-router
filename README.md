@@ -46,7 +46,7 @@ En caso de no encontrar coincidencias, se despliega un mensaje de "No hay result
 
 ## Construcción del proyecto
 
-Se construyó utilizando la metodología `mobile first` para dispositivos de 375px. Asimismo, para los estilos se hace el uso de la metodología `BEM` en el preprocesar `SASS`. También se utiliza `React` para crear componentes utilizando `Atomic Design` y aprovechar los estados de los componentes junto a sus hooks.
+Se construyó utilizando la metodología `mobile first` para dispositivos de 375px. Asimismo, para los estilos se hace el uso de la metodología `BEM` en el preprocesador `SASS`. También se utiliza `React` para crear componentes utilizando `Atomic Design` y aprovechar los estados de los componentes junto a sus hooks.
 
 A continuación se mostrará algunos detalles y buenas prácticas:
 
