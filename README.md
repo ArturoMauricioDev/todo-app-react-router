@@ -8,9 +8,8 @@ Es un proyecto que tiene como objetivo aplicar teoría de componentes utilizando
 - [Construcción del proyecto](#construcción-del-proyecto)
   - [Composición de componentes](#composición-de-componentes)
   - [Preprocesador SASS](#preprocesador-sass)
-  - [Manipulando el DOM con JavaScript](#manipulando-el-dom-con-javascript)
+  - [Manejo del estado](#manejo-del-estado)
 - [Licencia](#licencia)
-- [Bonus](#bonus)
 - [Autor](#autor)
 
 ## Demo
