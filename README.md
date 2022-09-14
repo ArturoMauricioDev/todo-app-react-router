@@ -5,6 +5,7 @@ Es un proyecto que tiene como objetivo aplicar teoría de componentes utilizando
 ## Tabla de Contenidos
 
 - [Demo](#demo)
+-[¿Por qué deberías usar Vite?](#por-qué-deberías-usar-vite)
 - [Construcción del proyecto](#construcción-del-proyecto)
   - [Composición de componentes](#composición-de-componentes)
   - [Preprocesador SASS](#preprocesador-sass)
@@ -12,6 +13,7 @@ Es un proyecto que tiene como objetivo aplicar teoría de componentes utilizando
 - [Licencia](#licencia)
 - [Autor](#autor)
 
+## ¿Por qué deberías usar Vite?
 ## Demo
 
 El proyecto esta disponible en:
