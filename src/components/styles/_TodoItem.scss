@@ -1,35 +1,40 @@
 .todo-item {
-    background-color: $bg-component;
-    border: 1px solid $color-variante;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-bottom: 16px;
-    width: 90%;
-    color: $color-secundario;
-    display: flex;
-    align-items: center;
-    position: relative;
-    .icon {
-        cursor: pointer;
-        width: 48px;
-        text-align: center;
-    }
-    .icon-check--active {
-        color: #4caf50;
-    }
-    p{
-        line-height: 20px;
-        letter-spacing: 0.02em;
-    }
-    &-p-completed{
-        text-decoration: line-through;
-    }
-    .icon-delete{
-        position: absolute;
-        right: 0;
-        top: -8px;
-    }
-    .icon-delete:hover{
-        color: red;
-    }
+  background-color: $bg-component;
+  border: 1px solid $color-variante;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  width: 90%;
+  color: $color-secundario;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .icon {
+    cursor: pointer;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: center;
+  }
+  .icon-check--active {
+    color: #4caf50;
+  }
+  p {
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  &-p-completed {
+    text-decoration: line-through;
+  }
+  .icon-edit:hover {
+    color: #4caf50;
+  }
+  .icon-delete {
+    position: absolute;
+    right: 0;
+    top: -8px;
+  }
+  .icon-delete:hover {
+    color: red;
+  }
 }

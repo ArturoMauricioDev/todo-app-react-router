@@ -1,22 +1,28 @@
 import React, { useState } from "react";
 import { ImCross } from "react-icons/im";
+import { useNavigate } from "react-router-dom";
 
-function TodoForm({ addTodo, setOpenModal }) {
+function TodoForm({ submitEvent, submitText, title }) {
+  const navigate = useNavigate();
   const [newTodoValue, setNewTodoValue] = useState("");
+
   const onCancel = () => {
-    setOpenModal(false);
+    navigate("/");
   };
   const onSubmit = (event) => {
     event.preventDefault();
-    addTodo(newTodoValue);
-    setOpenModal(false);
+    submitEvent(newTodoValue);
+    navigate("/");
   };
   const onChangeText = (event) => {
     setNewTodoValue(event.target.value);
   };
   return (
     <form onSubmit={onSubmit}>
-      <label htmlFor="text-todo">Escribe un nuevo TODO</label>
+      <label htmlFor="text-todo">
+        {/* {Escribe un nuevo TODO} */}
+        {title}
+      </label>
       <textarea
         name=""
         id="text-todo"
@@ -35,7 +41,8 @@ function TodoForm({ addTodo, setOpenModal }) {
         className="todoForm-button todoForm-button__add"
         disabled={newTodoValue.length <= 0}
       >
-        Añadir
+        {/* Añadir */}
+        {submitText}
       </button>
       {/* </div> */}
     </form>
