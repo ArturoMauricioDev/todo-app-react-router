@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ImCross } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
 
-function TodoForm({ submitEvent, submitText, title }) {
+function TodoForm({ submitEvent, submitText, title, defaultTodoText }) {
   const navigate = useNavigate();
-  const [newTodoValue, setNewTodoValue] = useState("");
+  console.log(defaultTodoText);
+  const [newTodoValue, setNewTodoValue] = useState(defaultTodoText || "");
+
+  useEffect(() => {
+    setNewTodoValue(defaultTodoText);
+  }, [defaultTodoText]);
 
   const onCancel = () => {
     navigate("/");
@@ -39,7 +44,7 @@ function TodoForm({ submitEvent, submitText, title }) {
       <button
         type="submit"
         className="todoForm-button todoForm-button__add"
-        disabled={newTodoValue.length <= 0}
+        disabled={newTodoValue?.length <= 0}
       >
         {/* Añadir */}
         {submitText}

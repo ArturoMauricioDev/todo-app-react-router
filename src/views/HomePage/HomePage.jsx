@@ -8,8 +8,6 @@ import { TodoSearch } from "../../components/TodoSearch/TodoSearch";
 import { TodoList } from "../../components/TodoList/TodoList";
 import { TodoItem } from "../../components/TodoItem/TodoItem";
 import { CreateTodoButton } from "../../components/CreateTodoButton/CreateTodoButton";
-import { Modal } from "../../components/Modal/Modal";
-import { TodoForm } from "../../components/TodoForm/TodoForm";
 import { EmptyTodos } from "../../components/EmptyTodos/EmptyTodos";
 import { ChangeAlertWithStorageListener } from "../../components/ChangeAlertWithStorageListener/ChangeAlert";
 
@@ -18,14 +16,8 @@ function HomePage() {
   const { states, stateUpdaters } = useTodos();
 
   const { filteredText, totalTodos, completedTodos, searchValue } = states;
-  const {
-    toggleTodo,
-    deleteTodo,
-    setSearchValue,
-    EditTodo,
-    addTodo,
-    setSincronizedItem,
-  } = stateUpdaters;
+  const { toggleTodo, deleteTodo, setSearchValue, setSincronizedItem } =
+    stateUpdaters;
 
   return (
     <>
@@ -48,7 +40,11 @@ function HomePage() {
             text={todo.text}
             completed={todo.completed}
             onComplete={() => toggleTodo(todo.id)}
-            onEdit={() => navigate("/edit/" + todo.id)}
+            onEdit={() =>
+              navigate("/edit/" + todo.id, {
+                state: { todo },
+              })
+            }
             onDelete={() => deleteTodo(todo.id)}
           />
         )}

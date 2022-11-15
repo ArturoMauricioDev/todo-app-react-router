@@ -8,7 +8,6 @@ function useTodos() {
   );
 
   const [searchValue, setSearchValue] = useState("");
-  const [openModal, setOpenModal] = useState(false);
 
   const completedTodos = todos.filter((todo) => !!todo.completed).length;
   const totalTodos = todos.length;
@@ -47,12 +46,17 @@ function useTodos() {
     saveTodos(newTodos);
   };
 
-  const EditTodo = (id) => {
-    // const todoIndex = todos.findIndex((todo) => todo.id === id);
-    // const newTodos = [...todos];
-    // newTodos[todoIndex].completed = !todos[todoIndex].completed;
-    // saveTodos(newTodos);
-    console.log("edit");
+  const editTodo = (id, newText) => {
+    const todoIndex = todos.findIndex((todo) => todo.id === id);
+    const newTodos = [...todos];
+    newTodos[todoIndex].text = newText;
+    saveTodos(newTodos);
+  };
+
+  const getTodo = (id) => {
+    const todoIndex = todos.findIndex((todo) => todo.id === id);
+    const text = todos[todoIndex]?.text;
+    return text;
   };
 
   const states = {
@@ -60,13 +64,13 @@ function useTodos() {
     completedTodos,
     searchValue,
     filteredText,
-    openModal,
+    getTodo,
   };
   const stateUpdaters = {
     setSearchValue,
     toggleTodo,
     deleteTodo,
-    EditTodo,
+    editTodo,
     addTodo,
     setSincronizedItem,
   };
